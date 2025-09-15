@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  background-color: #fdfdfd;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 7rem;
+  margin: 0;
+  color: #66bfbf;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  color: #66bfbf;
+}
+
+h3 {
+  color: #11999e;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 2;
+  color: #40514e;
+}
+
+hr {
+  border:#c0c0c0 6px;
+  border-bottom: none;
+  width: 5%;
+  margin: 50px auto;
+}
+
+/* Top Section */
+.top-container {
+  position: relative;
+  padding-top: 0;   
+}
+
+.rainbow-container {
+    width: 100%;
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+}
+
+.rainbow {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.title-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.mountain {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Middle Section */
+.middle-container {
+  margin: 100px 0;
+}
+
+.profile-pic {
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.intro {
+  width: 60%;
+  margin: auto;
+}
+
+.skills {
+  margin: 100px auto;
+}
+
+.skill-row {
+  width: 70%;
+  margin: 60px auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.skill-row img.skill-img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.resume-section {
+  margin: 60px auto;
+}
+
+/* Contact Section */
+.contact-me {
+  margin: 50px auto;
+  width: 70%;
+}
+
+.contact-message {
+  margin: 40px auto;
+  width: 60%;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+}
+
+/* Footer */
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 30px 0 20px;
+}
+
+.footer-link {
+  color: #ffffff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer-link:hover {
+  color: #eaf6f6;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .skill-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro, .contact-message {
+    width: 90%;
+  }
+
+  .profile-pic {
+    width: 140px;
+  }
+
+  .rainbow {
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .rainbow {
+    max-width: 220px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
